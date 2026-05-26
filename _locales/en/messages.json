@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "Slack Tab",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Adds a button to open Slack in a new tab.",
+    "description": "Description of the extension."
+  },
+  "toolbarButtonTitle": {
+    "message": "Slack",
+    "description": "Hover title for the Spaces Toolbar button."
+  },
+  "contextMenuShareText": {
+    "message": "Share to Slack",
+    "description": "Context menu text for sharing selected text."
+  }
+}

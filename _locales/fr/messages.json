@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "Onglet Slack",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Ajoute un bouton pour ouvrir Slack dans un nouvel onglet.",
+    "description": "Description of the extension."
+  },
+  "toolbarButtonTitle": {
+    "message": "Slack",
+    "description": "Hover title for the Spaces Toolbar button."
+  },
+  "contextMenuShareText": {
+    "message": "Partager sur Slack",
+    "description": "Context menu text for sharing selected text."
+  }
+}

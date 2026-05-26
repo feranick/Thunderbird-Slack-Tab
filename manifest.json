@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "0.5",
+  "author": "Nicola Ferralis",
+  "homepage_url": "https://github.com/feranick/Thunderbird-SlackTab/",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "feranick.slack-tab@addons.thunderbird.net",
+      "strict_min_version": "106.0"
+    }
+  },  
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.slack.com/*",
+    "menus",
+    "tabs",
+    "clipboardWrite"
+  ],
+  "default_locale": "en",
+  "icons": {
+    "32": "skin/slack_icon.svg",
+    "48": "skin/slack_icon.svg",
+    "96": "skin/slack_icon.svg"
+  },
+  "background": {
+    "scripts": [
+      "redirect.js"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "Pestaña de Slack",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Añade un botón para abrir Slack en una nueva pestaña.",
+    "description": "Description of the extension."
+  },
+  "toolbarButtonTitle": {
+    "message": "Slack",
+    "description": "Hover title for the Spaces Toolbar button."
+  },
+  "contextMenuShareText": {
+    "message": "Compartir en Slack",
+    "description": "Context menu text for sharing selected text."
+  }
+}
