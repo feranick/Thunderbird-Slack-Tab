@@ -14,5 +14,21 @@
   "contextMenuShareText": {
     "message": "Partager sur Slack",
     "description": "Context menu text for sharing selected text."
+  },
+  "optionsNotificationsHeader": {
+    "message": "Notifications",
+    "description": "Header of the notifications section in the options page."
+  },
+  "optionsShowNotificationsLabel": {
+    "message": "Afficher les notifications Slack",
+    "description": "Label of the checkbox that mutes/displays notifications."
+  },
+  "optionsShowNotificationsHint": {
+    "message": "Si décoché, aucune alerte ne s'affiche pour les nouveaux messages ou mentions Slack.",
+    "description": "Explanation shown under the notifications checkbox."
+  },
+  "optionsSaved": {
+    "message": "Enregistré.",
+    "description": "Confirmation shown after a preference is saved."
   }
 }

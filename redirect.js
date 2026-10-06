@@ -115,6 +115,23 @@ browser.menus.onClicked.addListener((info, tab) => {
 
 const slackState = new Map(); // tabId -> { count, hadStar }
 
+// User preference (set in the add-on Options page). Cached here and kept
+// in sync so the onUpdated listener can check it synchronously.
+let showNotifications = true;
+
+browser.storage.local.get({ showNotifications: true }).then((prefs) => {
+  showNotifications = prefs.showNotifications;
+});
+
+browser.storage.onChanged.addListener((changes, area) => {
+  if (area === "local" && changes.showNotifications) {
+    showNotifications = changes.showNotifications.newValue;
+    if (!showNotifications) {
+      browser.notifications.clear("slack-unread-alert");
+    }
+  }
+});
+
 browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (changeInfo.title && tab.url && tab.url.includes("slack.com")) {
     const title = changeInfo.title;
@@ -143,7 +160,8 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       body = "You have new unread messages.";
     }
 
-    if (shouldNotify) {
+    // State is still tracked while muted, so unmuting won't fire a stale alert
+    if (showNotifications && shouldNotify) {
       browser.notifications.create("slack-unread-alert", {
         type: "basic",
         iconUrl: "skin/slack_icon.png",

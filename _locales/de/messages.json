@@ -14,5 +14,21 @@
   "contextMenuShareText": {
     "message": "In Slack teilen",
     "description": "Context menu text for sharing selected text."
+  },
+  "optionsNotificationsHeader": {
+    "message": "Benachrichtigungen",
+    "description": "Header of the notifications section in the options page."
+  },
+  "optionsShowNotificationsLabel": {
+    "message": "Slack-Benachrichtigungen anzeigen",
+    "description": "Label of the checkbox that mutes/displays notifications."
+  },
+  "optionsShowNotificationsHint": {
+    "message": "Wenn deaktiviert, wird bei neuen Slack-Nachrichten oder Erwähnungen keine Desktop-Benachrichtigung angezeigt.",
+    "description": "Explanation shown under the notifications checkbox."
+  },
+  "optionsSaved": {
+    "message": "Gespeichert.",
+    "description": "Confirmation shown after a preference is saved."
   }
 }
